@@ -24,12 +24,28 @@
                 </nav>
             </div>
             <div id="menubtn">
-                <img src="menu.jpg" id="menu">
+                <img src="menu.png" id="menu">
             </div>
+
+            <!--features-->
+            <section id="feature">
+                <div class="title-text">
+                    <p>FEATURES</p>
+                    <h1>Why Choose Us</h1>
+                </div>
+                <div class="feature-box">
+                    <div class="features">
+                    <h1>Experinced staff</h1>
+                    </div>
+                    <div class=" features-img">
+                        <img src="images/barber-man.jpg">
+                    </div>
+                </div>
+            </section>
             <script>
-                var menubtn = document.getElementById("menubtn")
-                var sidenav = document.getElementById("sidenav")
-                var menu = document.getElementById("menu")
+                var menubtn= document.getElementById("menubtn")
+                var sidenav= document.getElementById("sidenav")
+                var menu= document.getElementById("menu")
                 sidenav.style.right = "-250px"
                 menubtn.onclick = function () {
                     if (sideNav.style.right == "-250px") {

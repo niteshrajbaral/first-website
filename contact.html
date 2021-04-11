@@ -15,35 +15,33 @@
         <li ><a href="about.html">About  </a></li>
         <li class="active"><a href="contact.html">Contact</a></li>
     </ul>
-    <div style=" text-align :center ;">
-        <h2 style="font-size:30px;color:white;">Contact Us</h2>
-        <p class="form">For more information, you can contact us</p>
+    <div class="container">
+        <div style="text-align:center">
+            <h2>Contact Us</h2>
+            <p>Swing by for a cup of coffee, or leave us a message:</p>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="map.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <form action="/action_page.php">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="nepal">Nepal</option>
+                        <option value="india">India</option>
+                        <option value="china">China</option>
+                    </select>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
     </div>
-    <form action=" index.php">
-        <p class="form">
-            <label for="fname">First Name:  </label>
-            <input type="text" name="fname" id="fname">
-        </p>
-        <p class="form">
-            <label for="lname">Last Name:  </label>
-            <input type="text" name="lname" id="lname">
-        </p>
-        <p class="form">
-            <label for="email">E-mail: </label>
-            <input type="text" name="email" id="email">
-        </p>
-        <p class="form">
-            <label for="country">Country: </label>
-            <select id="Country">
-                <option>Nepal</option>
-                <option>India</option>
-                <option>China</option>
-            </select>
-        </p>
-        <p class="form">
-            <label for="subject">Subject: </label>
-            <textarea id="subject"></textarea>
-        <p> <input type="submit" value="Send message"></p>
-    </form> 
 </body>
 </html>
